@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <script type="module">
+        import { fairyDustCursor } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+      
+        new fairyDustCursor();
+    </script>
+    <meta charset="UTF-8">
+    <title>우유의 효능</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000;
+            color: #fff;
+            cursor: url('image1.png') 16 16, auto;
+            height: 100vh; /* 전체 화면을 사용 */
+        }
+
+        .color { 
+            color: #f42d2d; 
+        }
+
+        .wrap { 
+            width: 1000px;
+            margin: 0 auto; /* 가운데 정렬 */
+            text-align: center;
+            position: relative; /* 부모 요소에 상대적 위치를 부여 */
+        }
+
+        .wrap img {
+            width: 100%; /* 이미지 크기를 부모 요소의 너비에 맞춤 */
+            height: auto; /* 비율 유지 */
+            position: absolute; /* 위치를 절대값으로 설정 */
+        }
+
+        .wrap img.umma-img {
+            top: 20px; /* 이미지 간격 조정 */
+        }
+       .umma-hover {
+  transition: all 0.3s ease;
+  z-index: 2;
+  transform: translate(-50%, -50%); /* 기본 위치 */
+}
+
+.umma-hover:hover {
+  transform: translate(-50%, -50%) scale(1.08); /* 확대 + 위치 유지 */
+  filter: drop-shadow(0 0 20px rgba(255, 255, 255, 0.8));
+  cursor: url('image1.png') 16 16, auto;
+}
+    </style>
+</head>
+<body>
+    <section>
+       <div class="color wrap" style="position: relative; width: 100%; height: 100vh;">
+    
+    
+    <img src="ummabg.png" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 1400px;">
+    
+    <img src="umma.png"
+     class="umma-hover"
+     style="position: absolute; left: 50%; top: 50%; width: 1400px;">
+    
+    <p style="font-size: 4rem; margin: 0; position: relative; padding-top: 30px;">Story of Milk 우유의 효능</p>
+     <img src="post.png" style="position: relative; width: 350px; align-items: left;">
+    </div>
+    </section>
+</body>
+</html>
